@@ -14,8 +14,8 @@ This repository contains the infrastructure code used to setup ~all~ dev/testnet
 
 Status   | Network    | Links   | Ansible                                                      | Terraform | Kubernetes
 ------   | --------   | ----     |  -----                                                       | -------   | ------
- WIP | [devnet-1](https://notes.ethereum.org/@ethpandaops/focil-devnet-1) | - | [🔗](ansible/inventories/devnet-1) | [🔗](terraform/devnet-1) | -
- Deprecated | [devnet-0](https://notes.ethereum.org/@ethpandaops/focil-devnet-0) | - | [🔗](ansible/inventories/devnet-0) | [🔗](terraform/devnet-0) | -
+ WIP | [devnet-1](https://notes.ethereum.org/@ethpandaops/heze-devnet-1) | - | [🔗](ansible/inventories/devnet-1) | [🔗](terraform/devnet-1) | -
+ Deprecated | [devnet-0](https://notes.ethereum.org/@ethpandaops/heze-devnet-0) | - | [🔗](ansible/inventories/devnet-0) | [🔗](terraform/devnet-0) | -
 
 # Development
 ## Version management for tools
