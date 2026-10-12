@@ -24,7 +24,7 @@ buildoor-overview:
         sub_filter_types text/html;
         sub_filter_once off;
     hosts:
-      - host: buildoor.focil-devnet-1.ethpandaops.io
+      - host: buildoor.heze-devnet-1.ethpandaops.io
         paths:
           - path: /
             pathType: Prefix

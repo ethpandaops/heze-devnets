@@ -27,7 +27,7 @@ xatu-relay-monitor:
     name: focil-devnet-1-xatu-relay-monitor
     ethereum:
       network: focil-devnet-1
-      beaconNodeUrl: https://beacon.focil-devnet-1.ethpandaops.io
+      beaconNodeUrl: https://beacon.heze-devnet-1.ethpandaops.io
     schedule:
       atSlotTimes:
         - "1s"

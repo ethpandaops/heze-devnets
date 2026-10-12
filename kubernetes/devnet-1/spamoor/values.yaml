@@ -23,7 +23,7 @@ spamoor:
         sub_filter_types text/html;
         sub_filter_once off;
     hosts:
-      - host: spamoor.focil-devnet-1.ethpandaops.io
+      - host: spamoor.heze-devnet-1.ethpandaops.io
         paths:
           - path: /
             pathType: Prefix
@@ -35,7 +35,7 @@ spamoor:
     enabled: true
 
   privateKey: "<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.spamoor_private_key}>"
-  authProviderUrl: "https://auth.focil-devnet-1.ethpandaops.io"
+  authProviderUrl: "https://auth.heze-devnet-1.ethpandaops.io"
   rpcEndpoints:
   - "group(bootnode-1)name(bootnode-1)https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-bootnode-1.srv.focil-devnet-1.ethpandaops.io"
   - "group(buildoor,lodestar,nethermind,1,buildoor-lodestar-nethermind-1)name(buildoor-lodestar-nethermind-1)https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-buildoor-lodestar-nethermind-1.srv.focil-devnet-1.ethpandaops.io"

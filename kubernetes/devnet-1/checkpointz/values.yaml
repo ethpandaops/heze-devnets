@@ -23,14 +23,14 @@ checkpointz:
         sub_filter_types text/html;
         sub_filter_once off;
     hosts:
-      - host: checkpoint-sync.focil-devnet-1.ethpandaops.io
+      - host: checkpoint-sync.heze-devnet-1.ethpandaops.io
         paths:
           - path: /
             pathType: Prefix
 
     tls:
     - hosts:
-      - checkpoint-sync.focil-devnet-1.ethpandaops.io
+      - checkpoint-sync.heze-devnet-1.ethpandaops.io
       secretName: focil-devnet-1-checkpoint-sync-tls
 
   config:

@@ -15,7 +15,7 @@ authenticatoor:
       cpu: 200m
       memory: 128Mi
 
-  issuer: "https://auth.focil-devnet-1.ethpandaops.io"
+  issuer: "https://auth.heze-devnet-1.ethpandaops.io"
 
   cloudflareAccess:
     verifyJWT: true
@@ -30,7 +30,7 @@ authenticatoor:
     enabled: true
     className: ingress-nginx-public
     hosts:
-      - host: auth.focil-devnet-1.ethpandaops.io
+      - host: auth.heze-devnet-1.ethpandaops.io
         paths:
           - path: /
             pathType: Prefix
