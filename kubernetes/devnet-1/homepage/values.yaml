@@ -25,7 +25,7 @@ testnet-homepage:
         sub_filter_once off;
 
     hosts:
-      - host: focil-devnet-1.ethpandaops.io
+      - host: heze-devnet-1.ethpandaops.io
         paths:
           - path: /
             pathType: Prefix
@@ -41,48 +41,48 @@ testnet-homepage:
     https://github.com/ethpandaops/focil-devnets/blob/master/ansible/inventories/devnet-1/group_vars/all/images.yaml
 
     ## Validator ranges
-    - https://config.focil-devnet-1.ethpandaops.io/api/v1/nodes/validator-ranges
+    - https://config.heze-devnet-1.ethpandaops.io/api/v1/nodes/validator-ranges
 
     Some examples:
     ```sh
     ## Pretty print in YAML format
-    curl -s https://config.focil-devnet-1.ethpandaops.io/api/v1/nodes/validator-ranges \
+    curl -s https://config.heze-devnet-1.ethpandaops.io/api/v1/nodes/validator-ranges \
       | yq '.ranges' -P
     ```
 
     ## Ethereum node inventory
-    - https://config.focil-devnet-1.ethpandaops.io/api/v1/nodes/inventory
+    - https://config.heze-devnet-1.ethpandaops.io/api/v1/nodes/inventory
 
     Some examples on how to filter specific data from the node inventory:
     ```sh
     # Getting execution layer client enodes
-    curl -s https://config.focil-devnet-1.ethpandaops.io/api/v1/nodes/inventory \
+    curl -s https://config.heze-devnet-1.ethpandaops.io/api/v1/nodes/inventory \
       | jq -r '.ethereum_pairs[] | .execution.enode'
     # Getting conseus layer client ENRs
-    curl -s https://config.focil-devnet-1.ethpandaops.io/api/v1/nodes/inventory \
+    curl -s https://config.heze-devnet-1.ethpandaops.io/api/v1/nodes/inventory \
       | jq -r '.ethereum_pairs[] | .consensus.enr'
     ```
 
     ## Genesis configuration
     ### Execution layer clients
-    - https://config.focil-devnet-1.ethpandaops.io/el/genesis.json
-    - https://config.focil-devnet-1.ethpandaops.io/el/besu.json
-    - https://config.focil-devnet-1.ethpandaops.io/el/chainspec.json
+    - https://config.heze-devnet-1.ethpandaops.io/el/genesis.json
+    - https://config.heze-devnet-1.ethpandaops.io/el/besu.json
+    - https://config.heze-devnet-1.ethpandaops.io/el/chainspec.json
 
     ### Consensus layer clients
-    - https://config.focil-devnet-1.ethpandaops.io/cl/config.yaml
-    - https://config.focil-devnet-1.ethpandaops.io/cl/genesis.ssz
-    - https://config.focil-devnet-1.ethpandaops.io/cl/deposit_contract.txt
-    - https://config.focil-devnet-1.ethpandaops.io/cl/deposit_contract_block.txt
-    - https://config.focil-devnet-1.ethpandaops.io/cl/deposit_contract_block_hash.txt
+    - https://config.heze-devnet-1.ethpandaops.io/cl/config.yaml
+    - https://config.heze-devnet-1.ethpandaops.io/cl/genesis.ssz
+    - https://config.heze-devnet-1.ethpandaops.io/cl/deposit_contract.txt
+    - https://config.heze-devnet-1.ethpandaops.io/cl/deposit_contract_block.txt
+    - https://config.heze-devnet-1.ethpandaops.io/cl/deposit_contract_block_hash.txt
 
 
   customArgs:
     - -b
-    - https://focil-devnet-1.ethpandaops.io
+    - https://heze-devnet-1.ethpandaops.io
 
   config:
-    baseURL: https://focil-devnet-1.ethpandaops.io
+    baseURL: https://heze-devnet-1.ethpandaops.io
     languageCode: en-us
     title: "focil-devnet-1"
     theme: PaperMod
@@ -96,21 +96,21 @@ testnet-homepage:
       disableThemeToggle: true
       defaultTheme: dark
       ethereum:
-        faucetUrl: https://faucet.focil-devnet-1.ethpandaops.io
-        rpcUrl: https://rpc.focil-devnet-1.ethpandaops.io
-        beaconRpcUrl: https://beacon.focil-devnet-1.ethpandaops.io
-        forkmonUrl: https://forkmon.focil-devnet-1.ethpandaops.io
-        assertoorUrl: https://assertoor.focil-devnet-1.ethpandaops.io
+        faucetUrl: https://faucet.heze-devnet-1.ethpandaops.io
+        rpcUrl: https://rpc.heze-devnet-1.ethpandaops.io
+        beaconRpcUrl: https://beacon.heze-devnet-1.ethpandaops.io
+        forkmonUrl: https://forkmon.heze-devnet-1.ethpandaops.io
+        assertoorUrl: https://assertoor.heze-devnet-1.ethpandaops.io
         beaconexplorerUrl: "https://focil-devnet-1.beaconcha.in"
-        doraUrl: https://dora.focil-devnet-1.ethpandaops.io
-        checkpointSyncUrl: "https://checkpoint-sync.focil-devnet-1.ethpandaops.io"
+        doraUrl: https://dora.heze-devnet-1.ethpandaops.io
+        checkpointSyncUrl: "https://checkpoint-sync.heze-devnet-1.ethpandaops.io"
         blobscanUrl: https://blobscan.com
-        blobscanethpandaUrl: https://blobscan.focil-devnet-1.ethpandaops.io
-        ethstatsUrl: https://ethstats.focil-devnet-1.ethpandaops.io
+        blobscanethpandaUrl: https://blobscan.heze-devnet-1.ethpandaops.io
+        ethstatsUrl: https://ethstats.heze-devnet-1.ethpandaops.io
         chainName: "focil-devnet-1"
         chainId: "7084864608"
         github: https://github.com/ethpandaops/focil-devnets/tree/master/network-configs/devnet-1/metadata
-        syncoorUrl: https://syncoor.focil-devnet-1.ethpandaops.io
+        syncoorUrl: https://syncoor.heze-devnet-1.ethpandaops.io
       metamask:
         enabled: true
       logo:

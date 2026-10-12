@@ -23,18 +23,18 @@ dora:
         sub_filter_types text/html;
         sub_filter_once off;
     hosts:
-      - host: dora.focil-devnet-1.ethpandaops.io
+      - host: dora.heze-devnet-1.ethpandaops.io
         paths:
           - path: /
             pathType: Prefix
 
   name: "focil-devnet-1"
-  configPath: "https://config.focil-devnet-1.ethpandaops.io/cl/config.yaml"
-  validatorNamesInventory: "https://config.focil-devnet-1.ethpandaops.io/api/v1/nodes/validator-ranges"
-  buildoorOverviewUrl: "https://buildoor.focil-devnet-1.ethpandaops.io"
-  publicRpcUrl: "https://rpc.focil-devnet-1.ethpandaops.io"
+  configPath: "https://config.heze-devnet-1.ethpandaops.io/cl/config.yaml"
+  validatorNamesInventory: "https://config.heze-devnet-1.ethpandaops.io/api/v1/nodes/validator-ranges"
+  buildoorOverviewUrl: "https://buildoor.heze-devnet-1.ethpandaops.io"
+  publicRpcUrl: "https://rpc.heze-devnet-1.ethpandaops.io"
   rainbowkitProjectId: "15fe4ab4d5c0bcb6f0dc7c398301ff0e"
-  executionGenesisConfig: "https://config.focil-devnet-1.ethpandaops.io/el/genesis.json"
+  executionGenesisConfig: "https://config.heze-devnet-1.ethpandaops.io/el/genesis.json"
   apiRequireAuth: False
   apiAuthSecret: "<path:/secrets/services/services.enc.yaml#dora | jsonPath {.api_secret}>"
   apiWhitelistedIPs: []
@@ -46,7 +46,7 @@ dora:
   executionIndexerDetailsEnabled: true
   executionIndexerTracesEnabled: True
   executionIndexerDetailsMaxSize: "100GB"
-  tracoorUrl: "https://tracoor.focil-devnet-1.ethpandaops.io"
+  tracoorUrl: "https://tracoor.heze-devnet-1.ethpandaops.io"
   tracoorNetwork: "focil-devnet-1"
 
   

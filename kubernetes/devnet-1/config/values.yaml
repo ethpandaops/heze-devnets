@@ -3,7 +3,7 @@
 network: devnet-1
 chainId: 7084864608
 
-domain: focil-devnet-1.ethpandaops.io
+domain: heze-devnet-1.ethpandaops.io
 
 config:
   enabled: true

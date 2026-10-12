@@ -16,7 +16,7 @@ forkmon:
         sub_filter_types text/html;
         sub_filter_once off;
     hosts:
-      - host: forkmon.focil-devnet-1.ethpandaops.io
+      - host: forkmon.heze-devnet-1.ethpandaops.io
         paths:
           - path: /
             pathType: Prefix

@@ -25,7 +25,7 @@ powfaucet:
     basicAuth: "<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.username}>:{PLAIN}<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.password}>"
 
     hosts:
-      - host: faucet-agents.focil-devnet-1.ethpandaops.io
+      - host: faucet-agents.heze-devnet-1.ethpandaops.io
         paths:
           - path: /
             pathType: Prefix
@@ -74,7 +74,7 @@ powfaucet:
     - url: "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-teku-ethrex-1.srv.focil-devnet-1.ethpandaops.io"
       name: "teku-ethrex-1"
       priority: 5
-  faucetExplorerLink: "https://dora.focil-devnet-1.ethpandaops.io/tx/{txid}"
+  faucetExplorerLink: "https://dora.heze-devnet-1.ethpandaops.io/tx/{txid}"
 
   faucetCaptchaEnabled: false
   faucetCaptchaSitekey: "<path:/secrets/services/services.enc.yaml#hcaptcha | jsonPath {.site_key}>"

@@ -26,7 +26,7 @@ assertoor:
         sub_filter_types text/html;
         sub_filter_once off;
     hosts:
-      - host: assertoor.focil-devnet-1.ethpandaops.io
+      - host: assertoor.heze-devnet-1.ethpandaops.io
         paths:
           - path: /
             pathType: Prefix
@@ -34,7 +34,7 @@ assertoor:
   persistence:
     enabled: true
 
-  authProviderUrl: "https://auth.focil-devnet-1.ethpandaops.io"
+  authProviderUrl: "https://auth.heze-devnet-1.ethpandaops.io"
 
   endpoints:
     - name:  bootnode-1
@@ -77,7 +77,7 @@ assertoor:
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@rpc-teku-reth-1.srv.focil-devnet-1.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.node_ingress.combined}>@bn-teku-reth-1.srv.focil-devnet-1.ethpandaops.io
 
-  validatorNamesInventory: https://config.focil-devnet-1.ethpandaops.io/api/v1/nodes/validator-ranges
+  validatorNamesInventory: https://config.heze-devnet-1.ethpandaops.io/api/v1/nodes/validator-ranges
   globalVariables:
     walletPrivkey: "<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.focil-devnets.assertoor_private_key}>"
     clientPairNames:
