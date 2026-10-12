@@ -32,7 +32,7 @@ testnet-homepage:
 
   customMarkdown: |-
     ## Network Spec
-    https://notes.ethereum.org/@ethpandaops/focil-devnet-0
+    https://notes.ethereum.org/@ethpandaops/heze-devnet-0
 
     ## Ansible setup
     https://github.com/ethpandaops/focil-devnets
