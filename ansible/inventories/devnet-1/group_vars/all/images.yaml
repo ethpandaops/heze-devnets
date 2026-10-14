@@ -3,8 +3,8 @@ default_ethereum_client_images:
   lighthouse: ethpandaops/lighthouse:focil-devnet-1
   lodestar: ethpandaops/lodestar:focil-devnet-1-1134cea
   nimbus: statusim/nimbus-eth2:multiarch-latest
-  prysm: gcr.io/offchainlabs/prysm/beacon-chain:latest
-  prysm_validator: gcr.io/offchainlabs/prysm/validator:latest
+  prysm: ethpandaops/prysm-beacon-chain:heze-devnet-1
+  prysm_validator: ethpandaops/prysm-validator:heze-devnet-1
   teku: ethpandaops/teku:focil-devnet-0
   grandine: ethpandaops/grandine:develop
   ### Execution layer clients
