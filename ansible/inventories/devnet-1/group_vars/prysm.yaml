@@ -64,4 +64,6 @@ prysm_validator_container_entrypoint:
 prysm_validator_container_command_extra_args:
   - --chain-config-file=/network-config/config.yaml
   - --graffiti={{ inventory_hostname }}
+  - --enable-beacon-rest-api
+  - --beacon-rest-api-provider=http://{{ prysm_container_name }}:{{ prysm_ports_http_beacon }}
 prysm_validator_datadir: /data/prysm-validator
