@@ -63,7 +63,7 @@ variable "focil_hcloud_token" {
 
 variable "ethereum_network" {
   type    = string
-  default = "focil-devnet-1"
+  default = "heze-devnet-1"
 }
 
 variable "base_cidr_block" {
