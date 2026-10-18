@@ -16,6 +16,9 @@ authenticatoor:
       memory: 128Mi
 
   issuer: "https://auth.heze-devnet-1.ethpandaops.io"
+  allowedReturnHosts:
+    - "*.focil-devnet-1.ethpandaops.io"
+    - "*.heze-devnet-1.ethpandaops.io"
 
   cloudflareAccess:
     verifyJWT: true
