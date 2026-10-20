@@ -1,0 +1,34 @@
+participants_matrix:
+  el:
+    - el_type: ethrex
+      el_image: ethpandaops/ethrex:heze-devnet-2
+  cl:
+    - cl_type: lodestar
+      cl_image: ethpandaops/lodestar:unstable
+      supernode: true
+    - cl_type: teku
+      cl_image: ethpandaops/teku:heze-devnet-2
+      supernode: true
+    - cl_type: lighthouse
+      cl_image: ethpandaops/lighthouse:heze-devnet-2
+      supernode: true
+    - cl_type: prysm
+      cl_image: ethpandaops/prysm-beacon-chain:heze-devnet-2-minimal
+      vc_image: ethpandaops/prysm-validator:heze-devnet-2-minimal
+      vc_extra_params:
+        - --enable-beacon-rest-api
+      supernode: true
+
+network_params:
+  preset: minimal
+  gloas_fork_epoch: 0
+  heze_fork_epoch: 1
+
+additional_services:
+  - spamoor
+  - dora
+
+global_log_level: debug
+
+dora_params:
+  image: ethpandaops/dora:master

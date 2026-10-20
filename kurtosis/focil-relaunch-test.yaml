@@ -1,0 +1,38 @@
+participants:
+  - cl_type: lodestar
+    cl_image: ethpandaops/lodestar:focil-devnet-0
+    el_type: nethermind
+    el_image: ethpandaops/nethermind:focil-devnet-0
+  - cl_type: lodestar
+    cl_image: ethpandaops/lodestar:focil-devnet-0
+    el_type: reth
+    el_image: ethpandaops/reth:focil-devnet-0
+  - cl_type: teku
+    cl_image: ethpandaops/teku:focil-devnet-0
+    el_type: besu
+    el_image: ethpandaops/besu:focil-devnet-0
+    supernode: true
+  - cl_type: teku
+    cl_image: ethpandaops/teku:focil-devnet-0
+    el_type: ethrex
+    el_image: ethpandaops/ethrex:focil-devnet-0
+  - cl_type: lighthouse
+    cl_image: ethpandaops/lighthouse:focil
+    el_type: reth
+    el_image: ethpandaops/reth:focil-devnet-0
+  - cl_type: lighthouse
+    cl_image: ethpandaops/lighthouse:focil
+    el_type: ethrex
+    el_image: ethpandaops/ethrex:focil-devnet-0
+
+network_params:
+  preset: mainnet
+  slot_duration_ms: 12000
+  gloas_fork_epoch: 0
+  heze_fork_epoch: 1
+
+additional_services:
+  - dora
+  - spamoor
+
+persistent: true
