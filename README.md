@@ -118,11 +118,9 @@ secret_zerossl:
     ACME_EAB_KID:
     ACME_EAB_HMAC_KEY:
 secret_prometheus_remote_write:
-    username:
     password:
 secret_loki:
     endpoint:
-    username:
     password:
 secret_nginx_shared_basic_auth:
     name:
