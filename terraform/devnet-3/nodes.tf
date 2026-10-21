@@ -28,10 +28,11 @@ variable "nodes" {
   description = "List of node definitions for the devnet"
   default = [
     { name = "bootnode", count = 1, cloud = "digitalocean" },
-    # heze-devnet-3 ready clients, ethrex only, 4 nodes per CL with 200 validators each.
-    { name = "teku-ethrex", count = 4, cloud = "digitalocean", validator_start = 0, validator_end = 800 },
-    { name = "lodestar-ethrex", count = 4, cloud = "digitalocean", validator_start = 800, validator_end = 1600 },
-    { name = "lighthouse-ethrex", count = 4, cloud = "digitalocean", validator_start = 1600, validator_end = 2400 },
+    # heze-devnet-3 ready clients, ethrex only, 2 nodes per CL with 200 validators each.
+    { name = "teku-ethrex", count = 2, cloud = "digitalocean", validator_start = 0, validator_end = 400 },
+    { name = "lodestar-ethrex", count = 2, cloud = "digitalocean", validator_start = 400, validator_end = 800 },
+    { name = "lighthouse-ethrex", count = 2, cloud = "digitalocean", validator_start = 800, validator_end = 1200 },
+    { name = "prysm-ethrex", count = 2, cloud = "digitalocean", validator_start = 1200, validator_end = 1600 },
     { name = "buildoor-lodestar-ethrex", count = 1, cloud = "digitalocean", size = "s-8vcpu-32gb-640gb-intel", builder_start = 0 },
   ]
 

@@ -14,7 +14,7 @@ default_ethereum_client_images:
   nethermind: ethpandaops/nethermind:heze-devnet-2
   reth: ethpandaops/reth:heze-devnet-2
   nimbusel: ethpandaops/nimbus-eth1:master
-  ethrex: ethpandaops/ethrex:heze-devnet-2
+  ethrex: ethpandaops/ethrex:heze-devnet-3
 
 default_tooling_images:
   mev_boost: ethpandaops/mev-boost:develop
