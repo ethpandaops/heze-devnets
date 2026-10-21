@@ -5,7 +5,7 @@ spamoor:
   image:
     repository: ethpandaops/spamoor
     tag: heze-devnet-3
-    pullPolicy: IfNotPresent
+    pullPolicy: Always
   resources:
     requests:
       cpu: 250m
