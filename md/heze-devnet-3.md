@@ -1,12 +1,12 @@
 # heze-devnet-3 spec
 
 :::info
-:mega: heze-devnet-3 launch date: 20.10.2026
+:mega: heze-devnet-3 launch date: 21.10.2026
 :::
 
 :::info
 :checkered_flag: **Scope.** Next spec devnet on the **Heze** fork. Keeps everything from [heze-devnet-2](https://notes.ethereum.org/@ethpandaops/heze-devnet-2) ([EIP-7805 FOCIL](https://eips.ethereum.org/EIPS/eip-7805), EIP-8015, EIP-8365) and adds EIP-8198 (CL + EL): slots go from 12s to **9s** at the Heze fork.
-Client images build from the common `heze-devnet-3` branch.
+Execution runs on ethrex `heze-devnet-3`; consensus clients (Lighthouse, Lodestar, Teku, Prysm) reuse their `heze-devnet-2` images, as the slot duration change is driven by config. 2 nodes per consensus client, 1600 validators.
 [frames-devnet-0](https://notes.ethereum.org/@ethpandaops/bogota-devnet-0) (EIP-8141) is kept on a separate devnet track.
 :::
 
@@ -36,7 +36,11 @@ Client images build from the common `heze-devnet-3` branch.
 
 ### Open PRs
 
-FOCIL PRs are tracked on [focil-devnet-1](https://notes.ethereum.org/@ethpandaops/heze-devnet-1#Open-PRs).
+FOCIL PRs are tracked on [heze-devnet-1](https://notes.ethereum.org/@ethpandaops/heze-devnet-1#Open-PRs).
+
+**EIPs**
+
+- [PR-12552 - Update EIP-8198: derive base fee responsiveness from slot timing](https://github.com/ethereum/EIPs/pull/12552) Open :exclamation:
 
 **Consensus Specs**
 
@@ -48,6 +52,8 @@ FOCIL PRs are tracked on [focil-devnet-1](https://notes.ethereum.org/@ethpandaop
 **Execution Spec PRs**
 
 - [PR-3703 - feat(spec-specs,test-forks,tests): implement EIP-8198 quick slots](https://github.com/ethereum/execution-specs/pull/3703) Merged :heavy_check_mark:
+- [PR-3871 - fix(spec-specs,tests): keep the blob schedule unchanged at Bogota](https://github.com/ethereum/execution-specs/pull/3871) Merged :heavy_check_mark:
+- [PR-3873 - feat(spec-specs,test-forks,tests): derive the Bogota base fee change from slot spacing](https://github.com/ethereum/execution-specs/pull/3873) Open :exclamation:
 
 ## Local testing
 
