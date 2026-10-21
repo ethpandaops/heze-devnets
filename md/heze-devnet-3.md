@@ -5,7 +5,7 @@
 :::
 
 :::info
-:checkered_flag: **Scope.** Next spec devnet on the **Heze** fork. Keeps everything from [heze-devnet-2](https://notes.ethereum.org/@ethpandaops/heze-devnet-2) ([EIP-7805 FOCIL](https://eips.ethereum.org/EIPS/eip-7805), EIP-8015, EIP-8365) and adds EIP-8198 (CL + EL): slots go from 12s to **10s** at the Heze fork.
+:checkered_flag: **Scope.** Next spec devnet on the **Heze** fork. Keeps everything from [heze-devnet-2](https://notes.ethereum.org/@ethpandaops/heze-devnet-2) ([EIP-7805 FOCIL](https://eips.ethereum.org/EIPS/eip-7805), EIP-8015, EIP-8365) and adds EIP-8198 (CL + EL): slots go from 12s to **9s** at the Heze fork.
 Client images build from the common `heze-devnet-3` branch.
 [frames-devnet-0](https://notes.ethereum.org/@ethpandaops/bogota-devnet-0) (EIP-8141) is kept on a separate devnet track.
 :::
@@ -22,7 +22,7 @@ Client images build from the common `heze-devnet-3` branch.
 ## Testing focus
 
 - **heze-devnet-2 regression**: FOCIL (IL lifecycle, timing windows, FOCIL × ePBS, IL req/resp), EIP-8015 and EIP-8365 must keep working.
-- **EIP-8198**: 12s → 10s slots derived from the fork configuration; IL deadlines and ePBS payload timing at the new slot length. On the EL, base fee max change of 5/48 and the new blob schedule (target 12, max 18, update fraction 12018519; provisional, needs a matching CL `BLOB_SCHEDULE` entry).
+- **EIP-8198**: 12s → 9s slots derived from the fork configuration; IL deadlines and ePBS payload timing at the new slot length. On the EL, the base fee max change is derived from the block spacing (3/32 at 9s), and blob throughput per second is kept by a BPO at the Heze fork epoch (target 11, max 17, update fraction 12241084).
 
 ### Specs & Tests
 
@@ -58,31 +58,36 @@ participants_matrix:
   el:
     - el_type: ethrex
       el_image: ethpandaops/ethrex:heze-devnet-3
-    - el_type: besu
-      el_image: ethpandaops/besu:heze-devnet-3
-    - el_type: nethermind
-      el_image: ethpandaops/nethermind:heze-devnet-3
-    - el_type: reth
-      el_image: ethpandaops/reth:heze-devnet-3
   cl:
     - cl_type: lighthouse
-      cl_image: ethpandaops/lighthouse:heze-devnet-3
+      cl_image: ethpandaops/lighthouse:heze-devnet-2
       supernode: true
     - cl_type: lodestar
-      cl_image: ethpandaops/lodestar:heze-devnet-3
+      cl_image: ethpandaops/lodestar:heze-devnet-2
+      supernode: true
     - cl_type: teku
-      cl_image: ethpandaops/teku:heze-devnet-3
+      cl_image: ethpandaops/teku:heze-devnet-2
+      supernode: true
+    - cl_type: prysm
+      cl_image: ethpandaops/prysm-beacon-chain:heze-devnet-2
+      vc_image: ethpandaops/prysm-validator:heze-devnet-2
+      vc_extra_params:
+        - --enable-beacon-rest-api
+      supernode: true
 
 network_params:
   gloas_fork_epoch: 0
   heze_fork_epoch: 1
-  slot_duration_ms_heze: 10000
+  slot_duration_ms_heze: 9000
 
 additional_services:
   - spamoor
   - dora
 
 global_log_level: debug
+
+ethereum_genesis_generator_params:
+  image: ethpandaops/ethereum-genesis-generator:6.2.7
 
 dora_params:
   image: ethpandaops/dora:master

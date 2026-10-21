@@ -6,7 +6,7 @@
 
 :::info
 :checkered_flag: **Scope.** Next spec devnet on the **Heze** fork. Keeps [EIP-7805 FOCIL](https://eips.ethereum.org/EIPS/eip-7805) as shipped on [focil-devnet-1](https://notes.ethereum.org/@ethpandaops/heze-devnet-1) and adds 2 new EIPs: EIP-8015 and EIP-8365 (CL only). EIP-8198 (Quick Slots) is **not** included; slots stay at 12s.
-Client images build from the common `focil-devnet-2` branch.
+Consensus client images build from the common `heze-devnet-2` branch; execution clients reuse their heze-devnet-1 images, as there is no execution-layer change.
 [frames-devnet-0](https://notes.ethereum.org/@ethpandaops/bogota-devnet-0) (EIP-8141) is kept on a separate devnet track.
 :::
 
@@ -53,21 +53,21 @@ Kurtosis example:
 ```yaml
 participants_matrix:
   el:
-    - el_type: ethrex
-      el_image: ethpandaops/ethrex:focil-devnet-2
     - el_type: besu
-      el_image: ethpandaops/besu:focil-devnet-2
+      el_image: ethpandaops/besu:focil-devnet-1
+    - el_type: ethrex
+      el_image: ethpandaops/ethrex:focil-devnet-1
     - el_type: nethermind
-      el_image: ethpandaops/nethermind:focil-devnet-2
+      el_image: ethpandaops/nethermind:focil-devnet-0
     - el_type: reth
-      el_image: ethpandaops/reth:focil-devnet-2
+      el_image: ethpandaops/reth:focil-devnet-1
   cl:
     - cl_type: lighthouse
-      cl_image: ethpandaops/lighthouse:focil-devnet-2
+      cl_image: ethpandaops/lighthouse:heze-devnet-2
     - cl_type: lodestar
-      cl_image: ethpandaops/lodestar:focil-devnet-2
+      cl_image: ethpandaops/lodestar:heze-devnet-2
     - cl_type: teku
-      cl_image: ethpandaops/teku:focil-devnet-2
+      cl_image: ethpandaops/teku:heze-devnet-2
 
 network_params:
   preset: minimal
