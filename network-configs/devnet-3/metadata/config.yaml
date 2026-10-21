@@ -239,6 +239,8 @@ BLOB_SCHEDULE:
 # ---------------------------------------------------------------
 
 GAS_LIMIT_SCHEDULE:
+  - EPOCH: 0
+    GAS_LIMIT: 200000000
   - EPOCH: 5
     GAS_LIMIT: 150000000
 
