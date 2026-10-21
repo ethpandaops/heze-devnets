@@ -73,11 +73,11 @@ ethereum_genesis_generator_config_files:
     export GLOAS_FORK_EPOCH=0
     export HEZE_FORK_VERSION="0x90{{ ethereum_genesis_fork_version_suffix }}"
     export HEZE_FORK_EPOCH=5
-    export SLOT_DURATION_MS_HEZE=10000
+    export SLOT_DURATION_MS_HEZE=9000
     export BPO_3_EPOCH=5
-    export BPO_3_MAX_BLOBS=18
-    export BPO_3_TARGET_BLOBS=12
-    export BPO_3_BASE_FEE_UPDATE_FRACTION=12018519
+    export BPO_3_MAX_BLOBS=17
+    export BPO_3_TARGET_BLOBS=11
+    export BPO_3_BASE_FEE_UPDATE_FRACTION=12241084
     export GENESIS_TIMESTAMP={{ ethereum_genesis_timestamp }}
     export GENESIS_DELAY={{ ethereum_genesis_timedelay }}
     export WITHDRAWAL_TYPE=0x02

@@ -22,7 +22,7 @@ participants_matrix:
 network_params:
   gloas_fork_epoch: 0
   heze_fork_epoch: 1
-  slot_duration_ms_heze: 10000
+  slot_duration_ms_heze: 9000
 
 additional_services:
   - spamoor
