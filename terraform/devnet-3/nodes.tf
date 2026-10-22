@@ -28,11 +28,18 @@ variable "nodes" {
   description = "List of node definitions for the devnet"
   default = [
     { name = "bootnode", count = 1, cloud = "digitalocean" },
-    # heze-devnet-3 ready clients, ethrex only, 2 nodes per CL with 200 validators each.
     { name = "teku-ethrex", count = 2, cloud = "digitalocean", validator_start = 0, validator_end = 400 },
     { name = "lodestar-ethrex", count = 2, cloud = "digitalocean", validator_start = 400, validator_end = 800 },
     { name = "lighthouse-ethrex", count = 2, cloud = "digitalocean", validator_start = 800, validator_end = 1200 },
     { name = "prysm-ethrex", count = 2, cloud = "digitalocean", validator_start = 1200, validator_end = 1600 },
+    { name = "teku-geth", count = 1, cloud = "digitalocean", validator_start = 1600, validator_end = 1700 },
+    { name = "teku-nethermind", count = 1, cloud = "digitalocean", validator_start = 1700, validator_end = 1800 },
+    { name = "lodestar-geth", count = 1, cloud = "digitalocean", validator_start = 1800, validator_end = 1900 },
+    { name = "lodestar-nethermind", count = 1, cloud = "digitalocean", validator_start = 1900, validator_end = 2000 },
+    { name = "lighthouse-geth", count = 1, cloud = "digitalocean", validator_start = 2000, validator_end = 2100 },
+    { name = "lighthouse-nethermind", count = 1, cloud = "digitalocean", validator_start = 2100, validator_end = 2200 },
+    { name = "prysm-geth", count = 1, cloud = "digitalocean", validator_start = 2200, validator_end = 2300 },
+    { name = "prysm-nethermind", count = 1, cloud = "digitalocean", validator_start = 2300, validator_end = 2400 },
     { name = "buildoor-lodestar-ethrex", count = 1, cloud = "digitalocean", size = "s-8vcpu-32gb-640gb-intel", builder_start = 0 },
   ]
 

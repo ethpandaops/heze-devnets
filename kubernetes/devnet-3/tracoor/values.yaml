@@ -126,6 +126,26 @@ tracoor-single:
             traceDisableMemory: true
             traceDisableStack: true
             traceDisableStorage: true
+      - name: lighthouse-geth-1
+        ethereum:
+          overrideNetworkName: heze-devnet-3
+          beacon:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-geth-1.srv.heze-devnet-3.ethpandaops.io
+          execution:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-geth-1.srv.heze-devnet-3.ethpandaops.io
+            traceDisableMemory: true
+            traceDisableStack: true
+            traceDisableStorage: true
+      - name: lighthouse-nethermind-1
+        ethereum:
+          overrideNetworkName: heze-devnet-3
+          beacon:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-nethermind-1.srv.heze-devnet-3.ethpandaops.io
+          execution:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-nethermind-1.srv.heze-devnet-3.ethpandaops.io
+            traceDisableMemory: true
+            traceDisableStack: true
+            traceDisableStorage: true
       - name: lodestar-ethrex-1
         ethereum:
           overrideNetworkName: heze-devnet-3
@@ -133,6 +153,26 @@ tracoor-single:
             nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-ethrex-1.srv.heze-devnet-3.ethpandaops.io
           execution:
             nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-ethrex-1.srv.heze-devnet-3.ethpandaops.io
+            traceDisableMemory: true
+            traceDisableStack: true
+            traceDisableStorage: true
+      - name: lodestar-geth-1
+        ethereum:
+          overrideNetworkName: heze-devnet-3
+          beacon:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-geth-1.srv.heze-devnet-3.ethpandaops.io
+          execution:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-geth-1.srv.heze-devnet-3.ethpandaops.io
+            traceDisableMemory: true
+            traceDisableStack: true
+            traceDisableStorage: true
+      - name: lodestar-nethermind-1
+        ethereum:
+          overrideNetworkName: heze-devnet-3
+          beacon:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-nethermind-1.srv.heze-devnet-3.ethpandaops.io
+          execution:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-nethermind-1.srv.heze-devnet-3.ethpandaops.io
             traceDisableMemory: true
             traceDisableStack: true
             traceDisableStorage: true
@@ -146,6 +186,26 @@ tracoor-single:
             traceDisableMemory: true
             traceDisableStack: true
             traceDisableStorage: true
+      - name: prysm-geth-1
+        ethereum:
+          overrideNetworkName: heze-devnet-3
+          beacon:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-geth-1.srv.heze-devnet-3.ethpandaops.io
+          execution:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-geth-1.srv.heze-devnet-3.ethpandaops.io
+            traceDisableMemory: true
+            traceDisableStack: true
+            traceDisableStorage: true
+      - name: prysm-nethermind-1
+        ethereum:
+          overrideNetworkName: heze-devnet-3
+          beacon:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-nethermind-1.srv.heze-devnet-3.ethpandaops.io
+          execution:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-nethermind-1.srv.heze-devnet-3.ethpandaops.io
+            traceDisableMemory: true
+            traceDisableStack: true
+            traceDisableStorage: true
       - name: teku-ethrex-1
         ethereum:
           overrideNetworkName: heze-devnet-3
@@ -153,6 +213,26 @@ tracoor-single:
             nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-ethrex-1.srv.heze-devnet-3.ethpandaops.io
           execution:
             nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-ethrex-1.srv.heze-devnet-3.ethpandaops.io
+            traceDisableMemory: true
+            traceDisableStack: true
+            traceDisableStorage: true
+      - name: teku-geth-1
+        ethereum:
+          overrideNetworkName: heze-devnet-3
+          beacon:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-geth-1.srv.heze-devnet-3.ethpandaops.io
+          execution:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-geth-1.srv.heze-devnet-3.ethpandaops.io
+            traceDisableMemory: true
+            traceDisableStack: true
+            traceDisableStorage: true
+      - name: teku-nethermind-1
+        ethereum:
+          overrideNetworkName: heze-devnet-3
+          beacon:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-nethermind-1.srv.heze-devnet-3.ethpandaops.io
+          execution:
+            nodeAddress: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-nethermind-1.srv.heze-devnet-3.ethpandaops.io
             traceDisableMemory: true
             traceDisableStack: true
             traceDisableStorage: true

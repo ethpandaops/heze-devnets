@@ -41,6 +41,30 @@ powfaucet:
     - url: "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-bootnode-1.srv.heze-devnet-3.ethpandaops.io"
       name: "bootnode-1"
       priority: 10
+    - url: "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-nethermind-1.srv.heze-devnet-3.ethpandaops.io"
+      name: "lighthouse-nethermind-1"
+      priority: 5
+    - url: "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-nethermind-1.srv.heze-devnet-3.ethpandaops.io"
+      name: "prysm-nethermind-1"
+      priority: 5
+    - url: "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-nethermind-1.srv.heze-devnet-3.ethpandaops.io"
+      name: "lodestar-nethermind-1"
+      priority: 5
+    - url: "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-nethermind-1.srv.heze-devnet-3.ethpandaops.io"
+      name: "teku-nethermind-1"
+      priority: 5
+    - url: "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-geth-1.srv.heze-devnet-3.ethpandaops.io"
+      name: "lighthouse-geth-1"
+      priority: 5
+    - url: "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-geth-1.srv.heze-devnet-3.ethpandaops.io"
+      name: "prysm-geth-1"
+      priority: 5
+    - url: "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-geth-1.srv.heze-devnet-3.ethpandaops.io"
+      name: "lodestar-geth-1"
+      priority: 5
+    - url: "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-geth-1.srv.heze-devnet-3.ethpandaops.io"
+      name: "teku-geth-1"
+      priority: 5
     - url: "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-ethrex-1.srv.heze-devnet-3.ethpandaops.io"
       name: "lighthouse-ethrex-1"
       priority: 5
