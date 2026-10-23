@@ -29,6 +29,11 @@
   authGroup: pandaops
   priority: -1
   archive: true
+- url: https://bn-lighthouse-reth-1.srv.heze-devnet-3.ethpandaops.io
+  name: lighthouse-reth-1
+  authGroup: pandaops
+  priority: -1
+  archive: true
 - url: https://bn-lodestar-ethrex-1.srv.heze-devnet-3.ethpandaops.io
   name: lodestar-ethrex-1
   authGroup: pandaops
@@ -43,6 +48,10 @@
   priority: -1
 - url: https://bn-lodestar-nethermind-1.srv.heze-devnet-3.ethpandaops.io
   name: lodestar-nethermind-1
+  authGroup: pandaops
+  priority: -1
+- url: https://bn-lodestar-reth-1.srv.heze-devnet-3.ethpandaops.io
+  name: lodestar-reth-1
   authGroup: pandaops
   priority: -1
 - url: https://bn-prysm-ethrex-1.srv.heze-devnet-3.ethpandaops.io
@@ -61,6 +70,10 @@
   name: prysm-nethermind-1
   authGroup: pandaops
   priority: -1
+- url: https://bn-prysm-reth-1.srv.heze-devnet-3.ethpandaops.io
+  name: prysm-reth-1
+  authGroup: pandaops
+  priority: -1
 - url: https://bn-teku-ethrex-1.srv.heze-devnet-3.ethpandaops.io
   name: teku-ethrex-1
   authGroup: pandaops
@@ -75,6 +88,10 @@
   priority: -1
 - url: https://bn-teku-nethermind-1.srv.heze-devnet-3.ethpandaops.io
   name: teku-nethermind-1
+  authGroup: pandaops
+  priority: -1
+- url: https://bn-teku-reth-1.srv.heze-devnet-3.ethpandaops.io
+  name: teku-reth-1
   authGroup: pandaops
   priority: -1
 
