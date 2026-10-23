@@ -40,6 +40,10 @@ variable "nodes" {
     { name = "lighthouse-nethermind", count = 1, cloud = "digitalocean", validator_start = 2100, validator_end = 2200 },
     { name = "prysm-geth", count = 1, cloud = "digitalocean", validator_start = 2200, validator_end = 2300 },
     { name = "prysm-nethermind", count = 1, cloud = "digitalocean", validator_start = 2300, validator_end = 2400 },
+    { name = "teku-reth", count = 1, cloud = "digitalocean", validator_start = 2400, validator_end = 2500 },
+    { name = "lodestar-reth", count = 1, cloud = "digitalocean", validator_start = 2500, validator_end = 2600 },
+    { name = "lighthouse-reth", count = 1, cloud = "digitalocean", validator_start = 2600, validator_end = 2700 },
+    { name = "prysm-reth", count = 1, cloud = "digitalocean", validator_start = 2700, validator_end = 2800 },
     { name = "buildoor-lodestar-ethrex", count = 1, cloud = "digitalocean", size = "s-8vcpu-32gb-640gb-intel", builder_start = 0 },
   ]
 
