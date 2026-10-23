@@ -34,6 +34,8 @@ forkmon:
     name: lighthouse-geth-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-nethermind-1.srv.heze-devnet-3.ethpandaops.io
     name: lighthouse-nethermind-1
+  - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-reth-1.srv.heze-devnet-3.ethpandaops.io
+    name: lighthouse-reth-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-ethrex-1.srv.heze-devnet-3.ethpandaops.io
     name: lodestar-ethrex-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-ethrex-2.srv.heze-devnet-3.ethpandaops.io
@@ -42,6 +44,8 @@ forkmon:
     name: lodestar-geth-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-nethermind-1.srv.heze-devnet-3.ethpandaops.io
     name: lodestar-nethermind-1
+  - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-reth-1.srv.heze-devnet-3.ethpandaops.io
+    name: lodestar-reth-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-ethrex-1.srv.heze-devnet-3.ethpandaops.io
     name: prysm-ethrex-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-ethrex-2.srv.heze-devnet-3.ethpandaops.io
@@ -50,6 +54,8 @@ forkmon:
     name: prysm-geth-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-nethermind-1.srv.heze-devnet-3.ethpandaops.io
     name: prysm-nethermind-1
+  - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-reth-1.srv.heze-devnet-3.ethpandaops.io
+    name: prysm-reth-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-ethrex-1.srv.heze-devnet-3.ethpandaops.io
     name: teku-ethrex-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-ethrex-2.srv.heze-devnet-3.ethpandaops.io
@@ -58,6 +64,8 @@ forkmon:
     name: teku-geth-1
   - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-nethermind-1.srv.heze-devnet-3.ethpandaops.io
     name: teku-nethermind-1
+  - addr: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-reth-1.srv.heze-devnet-3.ethpandaops.io
+    name: teku-reth-1
 
   config: |
     # How often to reload data from the nodes

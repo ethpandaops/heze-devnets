@@ -46,6 +46,8 @@ dugtrio:
     name: lighthouse-geth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-nethermind-1.srv.heze-devnet-3.ethpandaops.io
     name: lighthouse-nethermind-1
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-reth-1.srv.heze-devnet-3.ethpandaops.io
+    name: lighthouse-reth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-ethrex-1.srv.heze-devnet-3.ethpandaops.io
     name: lodestar-ethrex-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-ethrex-2.srv.heze-devnet-3.ethpandaops.io
@@ -54,6 +56,8 @@ dugtrio:
     name: lodestar-geth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-nethermind-1.srv.heze-devnet-3.ethpandaops.io
     name: lodestar-nethermind-1
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-reth-1.srv.heze-devnet-3.ethpandaops.io
+    name: lodestar-reth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-ethrex-1.srv.heze-devnet-3.ethpandaops.io
     name: prysm-ethrex-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-ethrex-2.srv.heze-devnet-3.ethpandaops.io
@@ -62,6 +66,8 @@ dugtrio:
     name: prysm-geth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-nethermind-1.srv.heze-devnet-3.ethpandaops.io
     name: prysm-nethermind-1
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-reth-1.srv.heze-devnet-3.ethpandaops.io
+    name: prysm-reth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-ethrex-1.srv.heze-devnet-3.ethpandaops.io
     name: teku-ethrex-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-ethrex-2.srv.heze-devnet-3.ethpandaops.io
@@ -70,3 +76,5 @@ dugtrio:
     name: teku-geth-1
   - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-nethermind-1.srv.heze-devnet-3.ethpandaops.io
     name: teku-nethermind-1
+  - url: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-reth-1.srv.heze-devnet-3.ethpandaops.io
+    name: teku-reth-1

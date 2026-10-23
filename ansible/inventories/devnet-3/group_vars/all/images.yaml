@@ -12,7 +12,7 @@ default_ethereum_client_images:
   geth: ethpandaops/geth:heze-devnet-3
   erigon: erigontech/erigon:main-latest
   nethermind: ethpandaops/nethermind:heze-devnet-3
-  reth: ethpandaops/reth:heze-devnet-2
+  reth: ethpandaops/reth:heze-devnet-3
   nimbusel: ethpandaops/nimbus-eth1:master
   ethrex: ethpandaops/ethrex:heze-devnet-3
 
