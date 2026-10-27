@@ -236,7 +236,9 @@ BLOB_SCHEDULE:
 # Gas Limit Scheduling (EIP-8261)
 # ---------------------------------------------------------------
 
-GAS_LIMIT_SCHEDULE: []
+GAS_LIMIT_SCHEDULE:
+  - EPOCH: 0
+    GAS_LIMIT: 200000000
 
 # Fast Confirmation Rule
 # ---------------------------------------------------------------
