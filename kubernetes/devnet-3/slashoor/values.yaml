@@ -21,21 +21,25 @@ slashoor:
       endpoints:
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-bootnode-1.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-buildoor-lodestar-ethrex-1.srv.heze-devnet-3.ethpandaops.io
+        - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-besu-1.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-ethrex-1.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-ethrex-2.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-geth-1.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-nethermind-1.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-reth-1.srv.heze-devnet-3.ethpandaops.io
+        - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-besu-1.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-ethrex-1.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-ethrex-2.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-geth-1.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-nethermind-1.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-reth-1.srv.heze-devnet-3.ethpandaops.io
+        - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-besu-1.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-ethrex-1.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-ethrex-2.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-geth-1.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-nethermind-1.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-reth-1.srv.heze-devnet-3.ethpandaops.io
+        - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-besu-1.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-ethrex-1.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-ethrex-2.srv.heze-devnet-3.ethpandaops.io
         - https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-geth-1.srv.heze-devnet-3.ethpandaops.io

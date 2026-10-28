@@ -8,7 +8,7 @@ default_ethereum_client_images:
   teku: ethpandaops/teku:heze-devnet-2
   grandine: ethpandaops/grandine:develop
   ### Execution layer clients
-  besu: ethpandaops/besu:heze-devnet-2
+  besu: ethpandaops/besu:heze-devnet-3
   geth: ethpandaops/geth:heze-devnet-3
   erigon: erigontech/erigon:main-latest
   nethermind: ethpandaops/nethermind:heze-devnet-3

@@ -5,7 +5,7 @@ dora:
   image:
     repository: ethpandaops/dora
     tag: bbusa-heze-devnet-3
-    pullPolicy: Always
+    pullPolicy: IfNotPresent
   resources:
     requests:
       cpu: 500m
