@@ -44,6 +44,10 @@ variable "nodes" {
     { name = "lodestar-reth", count = 1, cloud = "digitalocean", validator_start = 2500, validator_end = 2600 },
     { name = "lighthouse-reth", count = 1, cloud = "digitalocean", validator_start = 2600, validator_end = 2700 },
     { name = "prysm-reth", count = 1, cloud = "digitalocean", validator_start = 2700, validator_end = 2800 },
+    { name = "teku-besu", count = 1, cloud = "digitalocean", validator_start = 2800, validator_end = 2900 },
+    { name = "lodestar-besu", count = 1, cloud = "digitalocean", validator_start = 2900, validator_end = 3000 },
+    { name = "lighthouse-besu", count = 1, cloud = "digitalocean", region = "nyc1", validator_start = 3000, validator_end = 3100 },
+    { name = "prysm-besu", count = 1, cloud = "digitalocean", validator_start = 3100, validator_end = 3200 },
     { name = "buildoor-lodestar-ethrex", count = 1, cloud = "digitalocean", size = "s-8vcpu-32gb-640gb-intel", builder_start = 0 },
   ]
 

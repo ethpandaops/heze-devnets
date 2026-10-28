@@ -43,6 +43,9 @@ assertoor:
     - name:  buildoor-lodestar-ethrex-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-buildoor-lodestar-ethrex-1.srv.heze-devnet-3.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-buildoor-lodestar-ethrex-1.srv.heze-devnet-3.ethpandaops.io
+    - name:  lighthouse-besu-1
+      executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-besu-1.srv.heze-devnet-3.ethpandaops.io
+      consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-besu-1.srv.heze-devnet-3.ethpandaops.io
     - name:  lighthouse-ethrex-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-ethrex-1.srv.heze-devnet-3.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-ethrex-1.srv.heze-devnet-3.ethpandaops.io
@@ -58,6 +61,9 @@ assertoor:
     - name:  lighthouse-reth-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-reth-1.srv.heze-devnet-3.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-reth-1.srv.heze-devnet-3.ethpandaops.io
+    - name:  lodestar-besu-1
+      executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-besu-1.srv.heze-devnet-3.ethpandaops.io
+      consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-besu-1.srv.heze-devnet-3.ethpandaops.io
     - name:  lodestar-ethrex-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-ethrex-1.srv.heze-devnet-3.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-ethrex-1.srv.heze-devnet-3.ethpandaops.io
@@ -73,6 +79,9 @@ assertoor:
     - name:  lodestar-reth-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-reth-1.srv.heze-devnet-3.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-reth-1.srv.heze-devnet-3.ethpandaops.io
+    - name:  prysm-besu-1
+      executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-besu-1.srv.heze-devnet-3.ethpandaops.io
+      consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-besu-1.srv.heze-devnet-3.ethpandaops.io
     - name:  prysm-ethrex-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-ethrex-1.srv.heze-devnet-3.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-ethrex-1.srv.heze-devnet-3.ethpandaops.io
@@ -88,6 +97,9 @@ assertoor:
     - name:  prysm-reth-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-reth-1.srv.heze-devnet-3.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-reth-1.srv.heze-devnet-3.ethpandaops.io
+    - name:  teku-besu-1
+      executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-besu-1.srv.heze-devnet-3.ethpandaops.io
+      consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-besu-1.srv.heze-devnet-3.ethpandaops.io
     - name:  teku-ethrex-1
       executionUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-ethrex-1.srv.heze-devnet-3.ethpandaops.io
       consensusUrl: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-ethrex-1.srv.heze-devnet-3.ethpandaops.io
@@ -110,42 +122,50 @@ assertoor:
     clientPairNames:
       - bootnode-1
       - buildoor-lodestar-ethrex-1
+      - lighthouse-besu-1
       - lighthouse-ethrex-1
       - lighthouse-ethrex-2
       - lighthouse-geth-1
       - lighthouse-nethermind-1
       - lighthouse-reth-1
+      - lodestar-besu-1
       - lodestar-ethrex-1
       - lodestar-ethrex-2
       - lodestar-geth-1
       - lodestar-nethermind-1
       - lodestar-reth-1
+      - prysm-besu-1
       - prysm-ethrex-1
       - prysm-ethrex-2
       - prysm-geth-1
       - prysm-nethermind-1
       - prysm-reth-1
+      - teku-besu-1
       - teku-ethrex-1
       - teku-ethrex-2
       - teku-geth-1
       - teku-nethermind-1
       - teku-reth-1
     validatorPairNames:
+      - lighthouse-besu-1
       - lighthouse-ethrex-1
       - lighthouse-ethrex-2
       - lighthouse-geth-1
       - lighthouse-nethermind-1
       - lighthouse-reth-1
+      - lodestar-besu-1
       - lodestar-ethrex-1
       - lodestar-ethrex-2
       - lodestar-geth-1
       - lodestar-nethermind-1
       - lodestar-reth-1
+      - prysm-besu-1
       - prysm-ethrex-1
       - prysm-ethrex-2
       - prysm-geth-1
       - prysm-nethermind-1
       - prysm-reth-1
+      - teku-besu-1
       - teku-ethrex-2
       - teku-geth-1
       - teku-nethermind-1
