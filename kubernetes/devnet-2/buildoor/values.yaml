@@ -4,8 +4,8 @@ buildoor-overview:
   fullnameOverride: buildoor-overview
   image:
     repository: ethpandaops/buildoor
-    tag: bbusa-omit-inclusion-list
-    pullPolicy: IfNotPresent
+    tag: main-latest
+    pullPolicy: Always
 
   resources:
     requests:

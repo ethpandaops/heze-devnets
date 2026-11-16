@@ -120,14 +120,17 @@ powfaucet:
   faucetAuthenticatoorEnabled: true
   faucetAuthenticatoorAuthUrl: "https://auth.heze-devnet-3.ethpandaops.io"
   faucetAuthenticatoorExpectedAudience: "heze-devnet-3.ethpandaops.io"
+  faucetAuthenticatoorExpectedService: "faucet"
   faucetAuthenticatoorGrants:
     - duration: 86400
       limitAmount: 0
       limitCount: 0
       rewardFactor: 10
     - duration: 86400
+      feature: drop_100eth
       limitCount: 1
       overrideMaxDrop: 100000000000000000000
+      rewardFactor: 1
       skipModules:
       - pow
       - recurring-limits
