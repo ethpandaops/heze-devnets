@@ -15,9 +15,9 @@ secret_mev_flood_private_key: ENC[AES256_GCM,data:LYJDMo2JUMH5TnRJ/DiTpeF+u5oKTR
 secret_mev_flood_user_key: ENC[AES256_GCM,data:KKnBt1BEnBR/Cl9B7FljzV3kJOW9Gmp7DJ46xc1EkUZmWn1f8F4QLhgsyK34FKBKSCmDMCQoctwirAKTG/Vlsw==,iv:efkOBcrGeGJwT91SR+2wFI/fpnWASQeqjH3MJSIQBAA=,tag:1f+bkUNLh8kMsxO5qNQo+Q==,type:str]
 secret_xatu_sentry:
     server_address: ENC[AES256_GCM,data:NtunlqocO7EXeB8UOCAmZjHmhjnUFm0JZRcpmsyAijILPx4xcHKTjKrGMXjIvDMou5bmNa/bMvDhsrrHSTU5AmY7G/sHN6HuugRLv6fDyoPgiDRdqf1q7AY/,iv:TJmV1mRCZxPAqPydw3JMgj3umJvrD5VEb4LtyxLltJ4=,tag:ZrhaPd/yZQW8Cfck0IRijQ==,type:str]
-    user: ENC[AES256_GCM,data:NrBNLegTww==,iv:qMbOdKndLEM7UXAgKG35A2NS+Lw4h9da7suD6ZfzMoo=,tag:CBWu1/pyzNLZ0qO0IHICPg==,type:str]
-    password: ENC[AES256_GCM,data:u6iEOIwdmzi1roVwK59UBILbJTTJzdKcMPzC2N7zDU1Xqjhd,iv:e9In75DsjDIGl5l+Q+w3ULzTPGu4Z8uPBeSvv5DjPXc=,tag:2EGmbK2OFz9+lllclSwnOw==,type:str]
-    event_ingester_auth: ENC[AES256_GCM,data:zyZPMG0ruMGoKlqwXqAIUIJjD84RIX9cRdOIURj+oUbZMlpAqivdO9fR8kZ6MtkQOIsk0mGb+/qSSFBCudjnVA28,iv:aUZ8mderd9DGFZxH/IBnM/2howd39SswTAhu7gmhdic=,tag:OX702g+N1eGOvBjlgccZyA==,type:str]
+    user: ENC[AES256_GCM,data:WgVC0+N94qzkPA==,iv:mUW0reZ6IgAhpDFdVsI9BIPhJy3GACHdzgyzlp3trp0=,tag:2RV0ePAMc+3syxwhkuGbRA==,type:str]
+    password: ENC[AES256_GCM,data:UFIkn87H8aDlK11BdkbQEiBvBLYdPl33uxfmClIiSC2ywhdB,iv:lHJW0gbFz6ETPTWxTGf+oxrm0U+5/isre6WIs+oOJkw=,tag:Z+idRKh/y9qNoiD/XrvA7A==,type:str]
+    event_ingester_auth: ENC[AES256_GCM,data:54Ap2/xM+KRNI9VHaOXHO15yN2+APmKAQq+kLcS7mCsSwHuj7yNOQ7bF/yuO7Te9qxnvVgfmeqa7fFjqgJoDUbbmKgfitg==,iv:c46LqZXejoCCZQByET7z10Pvu6d1tGCqQqiLus7ImZc=,tag:S/cSpllHCiIOGXiS30SfgQ==,type:str]
     coordinator_secret: ENC[AES256_GCM,data:f4y7Ck0Z2zpOo8bHuS/w7Bhk6/6+DIvFXctMhjaMBYWLiwEY,iv:gQG7HBaDQPz0huJH2fq4y8HOGN3JwceJET/spgL5GXk=,tag:2guBo0MRKOMKOhpyjYL0VA==,type:str]
 secret_cert_encryption_psk: ENC[AES256_GCM,data:WXK5OSHqbAPXxWRwxDV4vSkWLd+KBMJMZuEPFUKE,iv:w45No4rBDjT+kGooIoHGikjJQjwWQ9dyNBzL/NBo7XE=,tag:9Unr8yDbWpCOINcCW/frSg==,type:str]
 secret_dora_api_key: ENC[AES256_GCM,data:RGBJ+xkv1WscCVO/Rd9/XZdOZatYCtSAKm/8yKVkwVr+fu0EB9LY7EG8fkw=,iv:YkgdX3hW+P53br6/uiNmmq4/qAyQ0/QrXSPgOjaMbVY=,tag:b/B9OBzYyWfJ5NemKpv2eQ==,type:str]
@@ -35,8 +35,8 @@ secret_dockerhub:
     username: ENC[AES256_GCM,data:wcbaPWvspoChKgU=,iv:EYS6a81vnt+aCvSnpeU40CgFgMArsz8hdjvJeQWfnvs=,tag:iy6Q5IHa0ER6OpkIxmVPwg==,type:str]
     token: ENC[AES256_GCM,data:AzHPPsXNzM6iX7+56rkUhN6fdYA1wogPT46FfpcthjaBCC07,iv:HR7r2vH/dTIs8/bgfwdOjcCxH/Yn8mLXrycQYFxbYwY=,tag:dR2464U4Q+D250To5hvZ+w==,type:str]
 sops:
-    lastmodified: "2026-11-16T01:38:12Z"
-    mac: ENC[AES256_GCM,data:Yb79EtNtLHavvCJFJkF2YAP36JKZArfC9wEOnKzNxvs5T9aYjLHIVovffqiZ4ac7ehG/9Hg4WzDwXYWmYULohESeSBN1wGVBc6LGSWuFoT+/2GcfBLadC2up0TzJ2rRl6HQuj21EyURpxBomwpXA4PnPvwEdyUvWPs6EWn1bLkU=,iv:lzWpGPX3qc4kUtYD4Da/UfuLR+/f0ZLV+o+Fjp6ZnrQ=,tag:0AkcZrf3kbiTt43YExlTrg==,type:str]
+    lastmodified: "2026-11-16T02:27:58Z"
+    mac: ENC[AES256_GCM,data:16x8ECWbFloX1jOUoPUuYYcwpeTNWpsXyl7ArTdAQiZUu4T9oY8gNe8y1pXOLYJfn9t6SdUVeC6JhvXx2jx0SmS1/vOx5cFllixV9BiUZHYozcD7ioBu4EdULrAqvOH4FEnGD/07aaAjhjyz55KNy10ajSsh5Yc6DoFt/75qCa4=,iv:8DjJNcUWrtKGAIL09fQ9BtwgTMHwXFPxzE7cqqgrbyg=,tag:xUjf+UASw5uBkTT6ME8NZA==,type:str]
     pgp:
         - created_at: "2025-10-27T13:25:35Z"
           enc: |-
