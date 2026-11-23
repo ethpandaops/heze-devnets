@@ -1,12 +1,11 @@
 # Ansible managed. Don't change this file manually. Template info: /vendor/collections/ansible_collections/ethpandaops/general/roles/generate_kubernetes_config/templates/upgradoor.yaml.j2
 
 upgradoor:
-  # Secrets are read from services-cluster/secrets/devnets.enc.yaml.
   fullnameOverride: upgradoor
 
   image:
     repository: ghcr.io/ethpandaops/upgradoor
-    tag: latest
+    tag: master-latest
     pullPolicy: Always
 
   resources:
