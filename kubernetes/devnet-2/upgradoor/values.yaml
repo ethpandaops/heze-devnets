@@ -41,8 +41,31 @@ upgradoor:
     - "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-reth-1.srv.heze-devnet-2.ethpandaops.io"
     - "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-ethrex-1.srv.heze-devnet-2.ethpandaops.io"
   validatorRangesUrl: "https://config.heze-devnet-2.ethpandaops.io/api/v1/nodes/validator-ranges"
+  # The UI includes the menu itself; its Content-Security-Policy admits the menu's data.
+  extraArgs:
+    - "--ui-script=https://pandamenu.ethpandaops.io/panda-menu-1.0.1.js"
+    - "--ui-script-integrity=sha384-icGX6g6CzB0tqlhDc6Su4c6IPVbcbUvfM3xjbbFYsYBwuZR79WkmOxDhGEPfmyn2"
+    - "--ui-origin=https://ethpandaops-platform-production-cartographoor.ams3.digitaloceanspaces.com"
 
-  settings: {}
+  settings:
+    actionPolicies:
+      security-upgrades: manual
+    hostStaleAfter: 10m
+    leaseTtl: 1h
+    maxIndependentPercent: 25
+    maxLeasedPercent: 25
+    maxUnavailablePercent: 25
+    minParticipationPercent: 80
+    policyImage: manual
+    policyKinds:
+      cl: manual
+      el: manual
+      other: manual
+      snooper: manual
+      vc: manual
+    policyPackages: manual
+    policyReboot: manual
+    readinessTimeout: 1h
 
   persistence:
     enabled: true
