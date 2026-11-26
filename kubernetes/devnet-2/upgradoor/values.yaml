@@ -30,16 +30,16 @@ upgradoor:
   # Queried in parallel; the chain most of them follow is used.
   beaconEndpoints:
     - "http://prysm-geth-001:5052"
-    - "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-nethermind-1.srv.heze-devnet-2.ethpandaops.io"
-    - "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-reth-1.srv.heze-devnet-2.ethpandaops.io"
-    - "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-besu-1.srv.heze-devnet-2.ethpandaops.io"
-    - "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-ethrex-1.srv.heze-devnet-2.ethpandaops.io"
-    - "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-buildoor-lodestar-nethermind-1.srv.heze-devnet-2.ethpandaops.io"
-    - "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-reth-1.srv.heze-devnet-2.ethpandaops.io"
-    - "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-ethrex-1.srv.heze-devnet-2.ethpandaops.io"
-    - "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-besu-1.srv.heze-devnet-2.ethpandaops.io"
-    - "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-reth-1.srv.heze-devnet-2.ethpandaops.io"
-    - "https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-ethrex-1.srv.heze-devnet-2.ethpandaops.io"
+    - "https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-nethermind-1.srv.heze-devnet-2.ethpandaops.io"
+    - "https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-reth-1.srv.heze-devnet-2.ethpandaops.io"
+    - "https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-besu-1.srv.heze-devnet-2.ethpandaops.io"
+    - "https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-ethrex-1.srv.heze-devnet-2.ethpandaops.io"
+    - "https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-buildoor-lodestar-nethermind-1.srv.heze-devnet-2.ethpandaops.io"
+    - "https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-reth-1.srv.heze-devnet-2.ethpandaops.io"
+    - "https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-prysm-ethrex-1.srv.heze-devnet-2.ethpandaops.io"
+    - "https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lodestar-besu-1.srv.heze-devnet-2.ethpandaops.io"
+    - "https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-teku-reth-1.srv.heze-devnet-2.ethpandaops.io"
+    - "https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@bn-lighthouse-ethrex-1.srv.heze-devnet-2.ethpandaops.io"
   validatorRangesUrl: "https://config.heze-devnet-2.ethpandaops.io/api/v1/nodes/validator-ranges"
   # The UI includes the menu itself; its Content-Security-Policy admits the menu's data.
   extraArgs:
