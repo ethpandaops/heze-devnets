@@ -139,20 +139,20 @@ erpc:
             - "trace_transaction"
             - "trace_block"
         upstreams:
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-bootnode-1.srv.heze-devnet-2.ethpandaops.io
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-buildoor-lodestar-nethermind-1.srv.heze-devnet-2.ethpandaops.io
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-besu-1.srv.heze-devnet-2.ethpandaops.io
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-ethrex-1.srv.heze-devnet-2.ethpandaops.io
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-nethermind-1.srv.heze-devnet-2.ethpandaops.io
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-reth-1.srv.heze-devnet-2.ethpandaops.io
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-besu-1.srv.heze-devnet-2.ethpandaops.io
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-ethrex-1.srv.heze-devnet-2.ethpandaops.io
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-nethermind-1.srv.heze-devnet-2.ethpandaops.io
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-reth-1.srv.heze-devnet-2.ethpandaops.io
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-besu-1.srv.heze-devnet-2.ethpandaops.io
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-ethrex-1.srv.heze-devnet-2.ethpandaops.io
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-nethermind-1.srv.heze-devnet-2.ethpandaops.io
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-reth-1.srv.heze-devnet-2.ethpandaops.io
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-besu-1.srv.heze-devnet-2.ethpandaops.io
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-ethrex-1.srv.heze-devnet-2.ethpandaops.io
-          - endpoint: https://<path:/secrets/services/services.enc.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-reth-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-bootnode-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-buildoor-lodestar-nethermind-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-besu-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-ethrex-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-nethermind-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lighthouse-reth-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-besu-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-ethrex-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-nethermind-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-lodestar-reth-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-besu-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-ethrex-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-nethermind-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-prysm-reth-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-besu-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-ethrex-1.srv.heze-devnet-2.ethpandaops.io
+          - endpoint: https://<path:../../secrets.sops.yaml#ethereum | jsonPath {.testnets.heze-devnets.node_ingress.combined}>@rpc-teku-reth-1.srv.heze-devnet-2.ethpandaops.io
